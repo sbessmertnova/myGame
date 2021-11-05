@@ -29,14 +29,12 @@ namespace WinFormsGame
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kachinButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.klopButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.startImageButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -59,7 +57,8 @@ namespace WinFormsGame
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Image = global::WinFormsGame.Properties.Resources.both;
+            this.pictureBox1.InitialImage = global::WinFormsGame.Properties.Resources.both;
             this.pictureBox1.Location = new System.Drawing.Point(518, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(534, 566);
@@ -96,7 +95,6 @@ namespace WinFormsGame
             // 
             this.panel2.BackColor = System.Drawing.Color.OldLace;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.startImageButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -113,17 +111,6 @@ namespace WinFormsGame
             this.label1.Text = "Узнай, как пройдет \r\nтвой день";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.UseWaitCursor = true;
-            // 
-            // startImageButton
-            // 
-            this.startImageButton.Location = new System.Drawing.Point(344, 514);
-            this.startImageButton.Name = "startImageButton";
-            this.startImageButton.Size = new System.Drawing.Size(150, 46);
-            this.startImageButton.TabIndex = 0;
-            this.startImageButton.Text = "startImage";
-            this.startImageButton.UseVisualStyleBackColor = true;
-            this.startImageButton.Visible = false;
-            this.startImageButton.Click += new System.EventHandler(this.startImageButton_Click);
             // 
             // Form1
             // 
@@ -149,7 +136,6 @@ namespace WinFormsGame
         private System.Windows.Forms.Button klopButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button startImageButton;
         private System.Windows.Forms.Label label1;
     }
 }
