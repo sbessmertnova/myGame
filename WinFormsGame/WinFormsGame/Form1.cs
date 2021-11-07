@@ -40,7 +40,7 @@ namespace WinFormsGame
             var predictions = (List<Prediction>)xmlSerializer.Deserialize(fileStream);
             fileStream.Close();
             var random = new Random();
-            var prediction = predictions[random.Next(10)];
+            var prediction = predictions[random.Next(predictions.Count)];
             return prediction;
         }
     }
