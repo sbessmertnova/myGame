@@ -24,7 +24,7 @@ namespace WinFormsGame
             if(CanGetPredition(AppDomain.CurrentDomain.BaseDirectory + "cdtfkl.xml"))
             {
                 pictureBox1.ImageLocation = @"C:\Sveta\NIK\myGame\a.jpg";
-                var prediction = LoadPredictionFromFile(AppDomain.CurrentDomain.BaseDirectory + "KlopPrediction.xml");
+                var prediction = LoadPredictionFromFile(AppDomain.CurrentDomain.BaseDirectory + "opr.xml");
                 label1.Text = prediction.TextOfPrediction;
             }
             else
@@ -53,7 +53,7 @@ namespace WinFormsGame
             if (CanGetPredition(AppDomain.CurrentDomain.BaseDirectory + "cdtfka.xml"))
             {
                 pictureBox1.ImageLocation = @"C:\Sveta\NIK\myGame\k.jpg";
-                var prediction = LoadPredictionFromFile(AppDomain.CurrentDomain.BaseDirectory + "KachinPrediction.xml");
+                var prediction = LoadPredictionFromFile(AppDomain.CurrentDomain.BaseDirectory + "apr.xml");
                 label1.Text = prediction.TextOfPrediction;
             }
             else
