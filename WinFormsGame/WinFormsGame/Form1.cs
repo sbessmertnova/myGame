@@ -21,9 +21,9 @@ namespace WinFormsGame
         
         private void klopButton_Click(object sender, EventArgs e)
         {
-            if(CanGetPredition(AppDomain.CurrentDomain.BaseDirectory + "cdtfkl.xml"))
+            if(CanGetPredition(AppDomain.CurrentDomain.BaseDirectory + @"\Pictures\cdtfkl.xml"))
             {
-                pictureBox1.ImageLocation = @"C:\Sveta\NIK\myGame\a.jpg";
+                pictureBox1.ImageLocation = AppDomain.CurrentDomain.BaseDirectory + @"\Pictures\a.jpg";
                 var prediction = LoadPredictionFromFile(AppDomain.CurrentDomain.BaseDirectory + "opr.xml");
                 label1.Text = prediction.TextOfPrediction;
             }
@@ -50,15 +50,15 @@ namespace WinFormsGame
 
         private void kachinButton_Click(object sender, EventArgs e)
         {
-            if (CanGetPredition(AppDomain.CurrentDomain.BaseDirectory + "cdtfka.xml"))
+            if (CanGetPredition(AppDomain.CurrentDomain.BaseDirectory + @"\Pictures\cdtfka.xml"))
             {
-                pictureBox1.ImageLocation = @"C:\Sveta\NIK\myGame\k.jpg";
+                pictureBox1.ImageLocation = AppDomain.CurrentDomain.BaseDirectory + @"\Pictures\k.jpg";
                 var prediction = LoadPredictionFromFile(AppDomain.CurrentDomain.BaseDirectory + "apr.xml");
                 label1.Text = prediction.TextOfPrediction;
             }
             else
             {
-                MessageBox.Show("Только по одному предсказанию в день от каждого медиума. Давай заавтра ещё поболтаем!", "Важно!", MessageBoxButtons.OK,
+                MessageBox.Show("Только по одному предсказанию в день от каждого медиума. Давай завтра ещё поболтаем!", "Важно!", MessageBoxButtons.OK,
                 MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
             }
         }
